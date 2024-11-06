@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Airbnb landing page clone </title>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="css/style.css" type="text/tailwindcss">
+    <!-- Tailwind Css Cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Tailwind plugins -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+    <!-- font size -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+</head>
+<body class="bg-[#FFFFFF] px-8 py-4 sm:px-28 sm:py-6">
+    
+    <!-- Hero Section Starts -->
+     <section id="hero" class="mb-14 sm:mb-28 sm:h-screen">
+        <div class="flex items-center justify-between mb-5 sm:mb-8">
+            <img class="w-28" src="img/logo.jpg" alt="logo">
+            <h4 class="font-robo font-semibold">Airbnb your place</h4>
+        </div>
+        <div class="sm:relative">
+            <div class="mb-4 sm:absolute sm:right-0">
+                <img class="rounded-lg" src="img/hero.jpg" alt="">
+            </div>
+            <div class="sm:absolute sm:w-2/5 sm:h-auto sm:shadow-2xl sm:rounded-2xl sm:p-5 sm:bg-[#FFFFFF] sm:top-10">
+                <h2 class="font-bold text-2xl sm:text-3xl">Vacation rentals in Chattogram</h2>
+                <p class="text-[#6C6C6C] text-lg mb-3">Find and book unique accommodations on Airbnb</p>
+                <form class="flex flex-col mb-5 ">
+                    <!-- loction input -->
+                    <label class="font-semibold mb-2 text-sm" for="location">Location</label>
+                    <input class="rounded-xl border-2 border-gray-500 mb-5" type="text" placeholder="Anywhere" required>
+                    <div class=" flex flex-col sm:flex sm:flex-row">
+                        <!-- check in input -->
+                        <label class="font-semibold mb-2 text-sm sm:hidden" for="location">Check In</label>
+                        <input class="rounded-xl border-2 border-gray-500 mb-5 text-[#6C6C6C] sm:w-3/6" type="date" placeholder="Add Date" required>
+                        <!-- check out input -->
+                        <label class="font-semibold mb-2 text-sm sm:hidden" for="location">Check Out</label>
+                        <input class="rounded-xl border-2 border-gray-500 mb-5 text-[#6C6C6C] sm:w-3/6" type="date" placeholder="Add Date" required>
+                    </div>
+                    <!-- search button -->
+                    <button class="bg-[#E61D4E] h-12 font-bold text-white tracking-wider rounded-lg hover:bg-[#b03554]"> <i class="fa-solid fa-magnifying-glass text-sm"></i> Search</button>
+                </form>
+            </div>
+        </div>
+     </section>
+    <!-- Hero Section Ends -->
+
+    <!-- vacation one section starts -->
+     <section id="vacation-one">
+        <div>
+            <h2 class="font-medium text-xl mb-2">Top-rated vacation rentals in Chattogram</h2>
+            <p class="text-[#6C6C6C] font-normal mb-6">Guests agree: these stays are highly rated for location, cleanliness, and more.</p>
+        </div>
+        <div class="flex flex-col space-y-7">
+            <div class="w-auto h-auto bg-white shadow-2xl p-6 rounded-2xl">
+                <img class="w-full h-56 rounded-2xl mb-3" src="img/vacation-1.jpg" alt="">
+                <h3 class="font-semibold -tracking-wide mb-2">Relaxing Apartment in Central Chittagong</h3>
+                <p class="text-[#6C6C6C] text-sm">A luxurious hotel in the heart of Chattogram, this 5-star resort offers everything you need to enjoy your stay.</p>
+            </div>
+            <div class="w-auto h-auto bg-white shadow-2xl p-6 rounded-2xl">
+                <img class="w-full h-56 rounded-2xl mb-3" src="img/vacation-2.jpg" alt="">
+                <h3 class="font-semibold -tracking-wide mb-2">Entire rental unit in Chittagong, Bangladesh</h3>
+                <p class="text-[#6C6C6C] text-sm">Experience the serenity of a private beachfront villa in Mumbai, perfect for a romantic getaway.</p>
+            </div>
+            <div class="w-auto h-auto bg-white shadow-2xl p-6 rounded-2xl">
+                <img class="w-full h-56 rounded-2xl mb-3" src="img/vacation-3.jpg" alt="">
+                <h3 class="font-semibold -tracking-wide mb-2">Entire condo in Chattogram, Bangladesh</h3>
+                <p class="text-[#6C6C6C] text-sm">Stay comfortably in a luxurious room at a private beachfront resort, perfect for a romantic getaway.</p>
+            </div>
+            <div class="w-auto h-auto bg-white shadow-2xl p-6 rounded-2xl">
+                <img class="w-full h-56 rounded-2xl mb-3" src="img/vacation-4.jpg" alt="">
+                <h3 class="font-semibold -tracking-wide mb-2">Room in Chittagong, Bangladesh</h3>
+                <p class="text-[#6C6C6C] text-sm">Discover the serenity of a private beachfront villa in Mumbai, perfect for a romantic getaway.</p>
+            </div>
+        </div>
+     </section>
+    <!-- vacation one section ends -->
+
+</body>
+</html>
